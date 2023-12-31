@@ -1,15 +1,38 @@
-# Melon-Tonemapper
+# Melon Tonemapping
 An efficient Tonemapper to fix ACES Issues - For Unity &amp; Prowl Game Engines
+
+# Motivations
+ACES is broken - High intensity colors shift hues
+- Intense blue shifts to purple, making highlights dull and dissappear completely in some cases,
+- Intense Reds shift to Yellow, providing a warmer feeling, but making things appear as they have some black body radiation.
+
+Melon tonemapping fixes that by shifting the color to white at high intensities, 
+with a slight "controlable" hue shift for a more pleasing look:
+Green and red slightly shift to yellow and blue shifts to cyan before going to white.
+
+Contrast is ajusted to approximate ACES levels
 
 # Supported Platforms
 
-## Unity Engine
+### Unity Engine
 - Currently only supports High Definition Render Pipeline 14.0.3 and above, using a fullscreen shader graph
 - Will add support for Universal Render Pipeline and Post Processing Stack Package.
 
-## Prowl Engine
+### Prowl Engine
 - Implemented natively
 - See : https://github.com/michaelsakharov/Prowl
 
+
+
+
 # Screenshots
 
+### Melon
+![Melon](https://github.com/ltmx/Melon-Tonemapper/assets/47640688/107d99c5-7651-4544-8bc4-a243d809a532)
+
+### ACES
+![ACES](https://github.com/ltmx/Melon-Tonemapper/assets/47640688/abee2fae-503b-4661-ad81-d3ffb27e6258)
+
+
+# Why "Melon" you might ask !?
+- My last name is Reinhard but Reinhard tonemapping already exists, so I just picked an old pseudonym I go by ;)
