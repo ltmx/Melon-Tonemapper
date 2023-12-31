@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name": "LTMX",
+    "email": "nicolasreinhard.pro@gmail.com",
+    "url": "https://github.com/LTMX"
+  },
+  "name": "com.ltmx.melontone",
+  "displayName": "Shader Graph Mastery",
+  "description": "A good looking Tonemapper for Unity HDRP, aimed to fix ACES issues and provide a better color grading experience.",
+  "version": "1.0.0",
+  "unity": "2022.1",
+  "dependencies": {
+    "com.unity.shadergraph": "14.0.3"
+  },
+  "keywords": ["unity", "shader", "subgraph", "shadergraph", "rendering", "hdrp", "tonemapper", "tonemapping", "color", "color grading", "lut"]
+}
