@@ -23,16 +23,9 @@ Contrast is ajusted to approximate ACES levels
 - See : https://github.com/michaelsakharov/Prowl
 
 
-
-
 # Screenshots
 
-### Melon
-![Melon](https://github.com/ltmx/Melon-Tonemapper/assets/47640688/107d99c5-7651-4544-8bc4-a243d809a532)
-
-### ACES
-![ACES](https://github.com/ltmx/Melon-Tonemapper/assets/47640688/abee2fae-503b-4661-ad81-d3ffb27e6258)
-
+![ACES VS MELON](https://github.com/ltmx/Melon-Tonemapper/assets/47640688/ba8a07db-a037-428c-8ce9-eb311f29535e)
 
 # Why "Melon" you might ask !?
 - My last name is Reinhard but Reinhard tonemapping already exists, so I just picked an old pseudonym I go by ;)
