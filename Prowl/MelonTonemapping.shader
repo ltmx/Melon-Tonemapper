@@ -40,17 +40,40 @@ Pass 0
 		    return saturate(color);
 		}
 		
-		// Shifts red to Yellow, green to Yellow, blue to Cyan,
+					
 		vec3 HueShift(vec3 In)
 		{
 			float A = max(In.x, In.y);
-			return vec3(A, max(A, In.z), In.z); 
+			return vec3(A, max(A, In.z), In.z);
 		}
-		
+
 		float Cmax(vec3 In)
 		{
 			return max(max(In.r, In.g), In.b);
 		}
+
+
+		// Made by TripleMelon
+		vec3 MelonTonemap(vec3 color)
+		{
+			// remaps the colors to [0-1] range
+			// tested to be as close ti ACES contrast levels as possible
+			color = pow(color, vec3(1.56, 1.56, 1.56));
+			color = color/(color + 0.84);
+
+			// governs the transition to white for high color intensities
+			float factor = Cmax(color) * 0.15; // multiply by 0.15 to get a similar look to ACES
+			factor = factor / (factor + 1); // remaps the factor to [0-1] range
+			factor *= factor; // smooths the transition to white
+
+			// shift the hue for high intensities (for a more pleasing look).
+			color = mix(color, HueShift(color), factor); // can be removed for more neutral colors
+			color = mix(color, vec3(1.0, 1.0, 1.0), factor); // shift to white for high intensities
+
+			// clamp to [0-1] range
+		    return clamp(color, vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0));
+		}
+
 
 		void main()
 		{
