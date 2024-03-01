@@ -1,11 +1,7 @@
-
-![LTMX_Melon_Banner_Thin](https://github.com/ltmx/Melon-Tonemapper/assets/47640688/4029de20-ae7a-46aa-af2a-747e9aee39f3)
-
-
 # Melon Cinematic Tonemapper
 An efficient Tonemapper to fix ACES Issues - For Unity &amp; Prowl Game Engines
 
-
+![LTMX_Melon_Banner_Thin](https://raw.githubusercontent.com/ltmx/Melon-Tonemapper/main/.branding/LTMX_Melon_Banner_Thin.jpeg)
 
 # Motivations
 ACES is broken - High intensity colors shift hues
